@@ -1,0 +1,20 @@
+# UCF for the 4 bit counter
+# Change "clk" pin assignment to "V4" (BTN_NORTH) to
+# manually control the clock signal (don't forget "PULLDOWN")
+# Change "clk" to "C9" (CLK_50MHz) to run counter off
+# 50MHz clock
+NET "i_Clk" LOC = "C9";
+
+NET "i_RX_Serial" LOC = "A13"; #"A6"; # RXD - Receive data  from HOST
+
+NET "o_ready" LOC = "C5";
+
+NET "o_LED<0>" LOC = "F12" ; # LED<0>
+NET "o_LED<1>" LOC = "E12" ; # LED<1>
+NET "o_LED<2>" LOC = "E11" ; # LED<2>
+NET "o_LED<3>" LOC = "F11" ; # LED<3>
+NET "o_LED<4>" LOC = "C11" ; # LED<4>
+NET "o_LED<5>" LOC = "D11" ; # LED<5>
+NET "o_LED<6>" LOC = "E9"  ; # LED<6>
+NET "o_LED<7>" LOC = "F9"  ; # LED<7>
+

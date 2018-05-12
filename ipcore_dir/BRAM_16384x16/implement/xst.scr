@@ -1,0 +1,13 @@
+run
+-ifmt VHDL
+-ent BRAM_16384x16_exdes
+-p xc3s500e-pq208-5
+-ifn xst.prj
+-write_timing_constraints No
+-iobuf YES
+-max_fanout 100
+-ofn BRAM_16384x16_exdes 
+-ofmt NGC
+-bus_delimiter ()
+-hierarchy_separator /
+-case Maintain
